@@ -1,0 +1,400 @@
+#tab1_inner,
+#tab2_inner,
+#tab3_inner {
+    display: none;
+    height: 450px;
+}
+.eyecatch {
+    display: block;
+    width: 600px !important;
+    margin: 30px auto 40px !important;  
+}
+.enter_btn {
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 1049px) {
+.eyecatch {
+    width: 100% !important;
+    margin: 30px auto 60px !important;  
+}
+}
+
+
+/* 学習スタイル */
+.studystyle_top {
+    background: url(curriculum_top.jpg);
+}
+#studystyle {
+    width: 95%;
+    max-width: 900px;
+    margin: 100px auto;
+}
+#studystyle p {
+    display: block;
+    line-height: 2.0em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#studystyle span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 8px auto 12px;
+    text-align: center;
+}
+
+.stylebox {
+    width: 100%;
+    max-width: 750px;
+    border: solid 5px #E9DADA;
+    padding: 20px 80px;
+    margin: 50px auto;
+}
+.stylebox p {
+    text-align: left !important;
+}
+
+@media screen and (max-width: 1049px) {
+#studystyle {
+    width: 100%;
+    margin: 0 auto;
+}
+#studystyle p {
+    display: block;
+    width: 100%;
+    line-height: 1.8em;
+    margin-bottom: 10px;
+    padding: 0 30px;
+    text-align: left;
+}
+.stylebox {
+    width: 95%;
+    padding: 20px 10px;
+    margin: 50px auto;
+}
+}
+
+
+/* カリキュラム */
+.curriculum_top {
+    background: url(curriculum_top.jpg);
+}
+#curriculum {
+    width: 95%;
+    max-width: 1000px;
+    height: 800px;
+    margin: 100px auto;
+}
+#curriculum p {
+    display: block;
+    margin-bottom: 1.2em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.purpose_logo {
+    display: block;
+    width: 355px;
+    margin: auto;
+}
+.purpose {
+    display: block;
+    width: 580px;
+    margin: auto;
+    background: #f5f5f5;
+    margin: 30px auto;
+    padding: 30px 0 30px 40px;
+    line-height: 2.0em;
+    letter-spacing: 0.02em;
+}
+
+.project {
+    position: relative;
+    width: 900px;
+    height: 300px;
+    margin: 50px auto;
+    border: solid 1px #555;
+    padding: 35px 20px 0;
+}
+.project img {
+    display: block;
+    width: 40%;
+    float: left;
+}
+.project p {
+    display: block;
+    width: 60%;
+    overflow: auto;
+    padding-top: 35px;
+    padding-left: 20px;
+    line-height: 40px !important;
+}
+.project01 p {
+    padding-top: 0;
+}
+.projectsup {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+}
+
+@media screen and (max-width: 1049px) {
+#curriculum {
+    width: 100%;
+    height: 1950px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+#curriculum p {
+    display: block;
+    width: 100%;
+    line-height: 1.8em;
+    margin-bottom: 10px;
+    padding: 0 30px;
+    text-align: left;
+}
+.purpose {
+    width: 100%;
+    max-width: 580px;
+    margin: 30px auto;
+    padding: 30px 0 30px 30px;
+    line-height: 2.0em;
+    letter-spacing: 0.02em;
+}
+.project {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+.project img {
+    width: 100%;
+    float: none;
+}
+.project p {
+    width: 100%;
+    margin-bottom: 0 !important;
+    padding: 20px 10px 10px !important;
+    line-height: 30px !important;
+}
+.projectsup {
+    padding: 30px 30px 0 !important;
+}
+}
+
+/* 生徒の一日 */
+.dailylife_top {
+    background: url(curriculum_top.jpg);
+}
+#dailylife {
+    width: 1000px;
+    margin: 100px auto;
+}
+#dailylife img {
+    width: 100%;
+    margin-top: 50px;
+}
+#dailylife span {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
+
+@media screen and (max-width: 1049px) {
+#dailylife {
+    width: 100%;
+    margin: 0 auto;
+}
+#dailylife img {
+    margin-top: 0;
+}
+}
+
+/* 通信制課程 */
+.correspondence_top {
+    background: url(curriculum_top.jpg);
+}
+#correspondence {
+    width: 95%;
+    max-width: 1000px;
+    margin: 100px auto;
+}
+#correspondence p {
+    display: block;
+    margin-bottom: 1.2em;
+    line-height: 1.8em;
+}
+
+.tushin01 {
+    display: block;
+    width: 100%;
+    padding: 30px 0 50px;
+}
+.tushin01_l {
+    display: block;
+    width: 50%;
+    padding-right: 50px;
+    float: left;
+}
+.tushin01_l img {
+    display: block;
+    width: 100%;
+}
+.tushin01_r {
+    display: block;
+    width: 50%;
+    padding-left: 50px;
+    overflow: auto;
+}
+
+.tushin02 td {
+    width: 33.3%;
+    font-size: 0.9em;
+    padding: 20px;
+}
+.tushin02 td img {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+.tushin02 td h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+.mihoudai {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+}
+.mihoudai_sp {
+    display: none;
+}
+
+@media screen and (max-width: 1049px) {
+#correspondence {
+    width: 100%;
+    margin: 0 auto;
+}
+.tushin01 {
+    padding: 0;
+}
+.tushin01_l {
+    width: 100%;
+    float: none;
+    padding: 0;
+}
+.tushin01_r {
+    width: 100%;
+    padding: 30px 30px 20px;
+}
+.tushin02 td {
+    display: block;
+    width: 100%;
+    border-top: solid 1px #ddd;
+    margin-top: 30px;
+}
+.tushin02 td h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+.tushin02 td img {
+    width: 300px;
+}
+
+.mihoudai {
+    visibility: hidden;
+}
+.mihoudai_sp {
+    display: block;
+    padding: 40px 30px 10px;
+}
+}
+
+
+
+
+
+/* タイムスケジュール */
+
+.monday {
+    width: 100%;
+    line-height: 30px;
+}
+
+
+
+
+.time {
+    width: 25%;
+    float: left;
+    border-top: solid 1px #c0c0c0; 
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
+
+.table-r {
+    width: 75%;
+    color: #7d0000;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    border-left: solid 1px #c0c0c0; 
+    font-weight: bolder;
+    
+    
+}
+
+.tex {
+    color: black;
+    font-weight: lighter;
+    font-size: small;
+}
+
+
+
+.sunday {
+    width: 100%;
+    line-height: 30px;    
+}
+
+.time-2 {
+    border-bottom: solid 1px #c0c0c0;
+    margin-bottom: 60px;
+}
+
+
+.plans {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: 120%;
+    color: dimgray;
+    
+}
+
+
+.plans-2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: 120%;
+    color: dimgray;
+}
+
+
+
+
+
+
+
+
+

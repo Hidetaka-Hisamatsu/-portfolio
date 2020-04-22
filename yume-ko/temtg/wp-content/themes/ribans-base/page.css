@@ -1,0 +1,500 @@
+@charset "UTF-8";
+
+
+#content {
+	padding-top: 70px;
+}
+@media screen and (max-width: 999px) {
+#content {
+	padding-top: 50px;
+}
+}
+
+.bg-wrap {/* box背景画像 */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg-wrap .bg1 {
+	background: rgba(255,255,255,0.9);
+}
+.bg-wrap .bg2 {
+	background: rgba(30,30,30,0.85);
+}
+
+
+.entry-header {/* ヘッダー部分 */
+	display: block;
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.entry-header h1 {
+	display: block;
+	width: 480px;
+	font-size: 3.0em;
+	font-weight: normal;
+	color: white;
+	margin: 0 auto;
+	padding: 20px 0;
+	border-top: solid 1px white;
+	border-bottom: solid 1px white;
+	letter-spacing: 0.1em;
+}
+.entry-header-wrap {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	padding-top: 180px;
+}
+
+@media screen and (max-width: 999px) {
+.entry-header {/* ヘッダー部分 */
+	height: 400px;
+}
+.entry-header h1 {
+	width: 340px;
+	font-size: 2.0em;
+}
+.entry-header-wrap {
+	padding-top: 150px;
+}
+}
+
+
+.page-operator {/* 最終審査員・OPERATOR */
+	max-width: 1000px;
+	margin: auto;
+}
+.page-operator div {
+	width: 33.3%;
+	float: left;
+	padding: 10px;
+}
+.page-operator div.clear {
+	float: none;
+	padding: 0;
+}
+.page-operator div span {
+	display: block;
+	background: white;
+	height: auto;
+}
+.page-operator div p {
+	margin-top: 20px;
+	text-align: center !important;
+}
+
+
+
+/* 受付中イベント */
+.page-operator div.pod-3 {
+	width: 25%;
+}
+.pod-3 p {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.page-operator div.pod-4 {
+	width: 33.3%;
+}
+.page-operator div.pod-4 span {
+	background: #777;
+	font-size: 1.6em;
+	color: white;
+	line-height: 200px;
+	letter-spacing: 0.2em;
+}
+.pod-single,
+.pod-double {
+	font-size: 0.8em;
+	font-weight: normal;
+}
+.pod-single {
+	line-height: 3.5;
+}
+@media screen and (max-width: 999px) {
+.page-operator-3 {
+	max-width: 500px;
+}
+.page-operator div.pod-3 {
+	width: 50%;
+}
+.page-operator div.pod-3,
+.page-operator div.pod-4 {
+	padding: 5px;
+}
+.page-operator div.pod-4 span {
+	line-height: 100px;
+}
+.pod-single,
+.pod-double {
+	font-size: 0.9em;
+}
+}
+
+
+.prize-title {
+	display: inline-block;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 30px;
+	padding: 0 20px 5px;
+	border-bottom: 3px solid white;
+}
+@media screen and (max-width: 999px) {
+.prize-title {
+	font-size: 1.7em;
+}
+.prize-text {
+	font-size: 1.0em;
+}
+}
+
+
+
+.daily-container {/* イベント概要 */
+	margin-bottom: 50px;
+}
+.daily-box {
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+.daily-box span {
+	display: block;
+	width: 32%;
+	height: 280px;
+	float: left;
+	border: solid 8px #e5e5e5;
+}
+.daily-box span.daily-center {
+	margin: 0 2%;
+}
+.daily-box h4 {
+	display: block;
+	background: #333;
+	color: white;
+	font-size: 1.8em;
+	text-align: left;
+	padding: 5px 30px;
+	border-radius: 10px;
+	vertical-align: bottom;
+}
+.daily-box h4 b {
+	font-size: 1.8em;
+}
+.daily-box h5 {
+	position: relative;
+	display: inline-block;
+	font-size: 1.6em;
+	margin: 30px 0;
+}
+.daily-box h5::before {
+	content: "";
+	position: absolute;
+	bottom: 2px;
+	z-index: -1;
+	display: block;
+	width: 100%;
+	height: 10px;
+	background: #d77;
+}
+.daily-box p {
+	font-size: 1.0em;
+}
+
+@media screen and (max-width: 999px) {
+.daily-box h4 {
+	font-size: 1.5em;
+	padding: 1px 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.daily-box span {
+	width: 100%;
+	height: 150px;
+	float: none;
+	margin: 0 0 10px;
+	padding: 0 15px;
+	border: solid 6px #e5e5e5;
+}
+.daily-box span.daily-center {
+	margin: 0 0 10px;
+}
+.daily-box span br {
+	display: none;
+}
+.daily-box h5 {
+    margin: 20px 0;
+}
+}
+
+
+.appli-contents {/* 応募資格box */
+	display: block;
+	width: 95%;
+	max-width: 1000px;
+	background: rgba(255,255,255,0.9);
+	margin: 50px auto 100px;
+	padding: 2.5em 20px 1.0em;
+	color: #404040;
+}
+.appli-contents h4 {
+	margin-top: 0;
+}
+
+.capacity {/* 応募資格 */
+	font-weight: bold;
+	text-align: left;
+	padding: 2.5em 2.5em 1.0em;
+}
+.capacity p {
+	position: relative;
+	display: block;
+	padding-left: 2.5em;
+}
+.capacity p::before {
+	font-family: FontAwesome;/*忘れずに*/
+	content: "\f00c";/*アイコンのユニコード*/
+	position: absolute;/*絶対位置*/
+	font-size: 1.4em;/*サイズ*/
+	left: 0;/*アイコンの位置*/
+	top: 0;/*アイコンの位置*/
+	color: #cc1932;
+	line-height: 1.2;
+}
+
+#cspoint_container {/* 参加方法 */
+    display: block;
+    width: 100%;
+    color: #1a1a1a;
+    max-width: 1000px;
+    margin: 50px auto 100px;
+}
+.cspoint_box {
+    display: block;
+    width: 50%;
+    height: 400px;
+    float: left;
+    padding: 10px;
+}
+.cspoint {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+	box-shadow: 0 0 0 1px white;
+}
+.csnum {
+    position: relative;
+    top: -35px;
+    display: block;
+    width: 70px;
+    color: white;
+    font-size: 2.5em;
+    background: rgba(125,0,0,0.8);
+    line-height: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+.cspoint p {
+    font-size: 1.3em;
+}
+.csimg {
+    height: 180px;
+    overflow: hidden;
+}
+.csimg img {
+    display: block;
+    width: 100%;
+}
+.cs_arrow {
+	display: block;
+	width: 0;
+	margin: 50px auto;
+	border-top: solid 40px white;
+	border-left: solid 150px transparent;
+	border-right: solid 150px transparent;
+}
+
+@media screen and (max-width: 1119px) {
+    .cspoint_box {
+        height: 380px;
+    }
+    .cspoint p {
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 829px) {
+    #cspoint_container {
+        max-width: 400px;
+    }
+    .cspoint_box {
+        width: 100%;
+        height: 380px;
+        float: none;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    #cspoint_container {
+        margin: 30px auto 100px;
+    }
+}
+
+
+
+
+
+
+/* 開催レポート */
+.page-operator-2 {
+	max-width: 800px;
+}
+.page-operator div.pod-2 {
+	width: 40%;
+}
+.page-operator div.pod-2_center {
+	width: 20%;
+}
+
+@media screen and (max-width: 899px) {
+.page-operator-2 {
+	max-width: 640px;
+}
+.page-operator div.pod-2 {
+	width: 50%;
+	margin: auto;
+}
+.page-operator div.pod-2_center {
+	display: none;
+}
+}
+
+.report-change-L {/* ご飯を食べながらみんなで意見交換 */
+	width: 40%;
+	float: left;
+	padding-right: 5%;
+}
+.report-change-R {
+	width: 60%;
+	overflow: auto;
+}
+.report-change-R p {
+	font-size: 1.1em;
+}
+
+@media screen and (max-width: 799px) {
+	.report-change-L {
+		width: 300px;
+		float: none;
+		padding-right: 0;
+		margin: 0 auto 50px;
+	}
+	.report-change-R {
+		width: 100%;
+		max-width: 500px;
+		margin: auto;
+	}
+}
+
+
+
+
+
+/* お問い合わせ */
+.morebtn-contact {
+	padding-bottom: 60px;
+}
+.morebtn-contact a {
+	background: #cc1932;
+	color: white !important;
+	border: none;
+}
+.morebtn-contact a:hover {
+	background: #ec3952;
+}
+
+.cm-box {/* 運営元・運営会社 */
+	display: block;
+	width: 100%;
+	background: #333;
+	color: white;
+	margin: 0 auto 100px;
+}
+.cm-L {
+	width: 40%;
+	float: left;
+	padding-top: 70px;
+}
+.cm-L span {
+	display: block;
+	width: 60%;
+	background: white;
+	margin-bottom: 30px;
+	margin: auto;
+}
+.cm-L p {
+	font-size: 1.3em;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+.cm-R {
+	width: 60%;
+	overflow: auto;
+	text-align: left;
+	padding: 40px;
+	padding-left: 0;
+}
+.cm-R table {
+	margin: 0;
+}
+.cm-R tr {
+	border-top: solid 2px white;
+}
+.cm-R tr:first-child {
+	border-top: none;
+}
+.cm-R td {
+	padding: 20px;
+	padding-right: 0;
+}
+.cm-R th {
+	border-right: solid 2px white;
+	padding: 20px;
+}
+
+
+@media screen and (max-width: 999px) {
+.cm-box {
+	font-size: 1.2em;
+	margin-bottom: 30px;
+}
+.cm-L {
+	width: 300px;
+	float: none;
+	margin: auto;
+}
+.cm-L span {
+	width: 80%;
+}
+.cm-R {
+	width: 90%;
+	padding: 0;
+	margin: 30px auto;
+}
+.cm-R td {
+	padding: 10px;
+}
+.cm-R th {
+	min-width: 120px;
+	padding: 10px;
+}
+}

@@ -1,0 +1,341 @@
+#tab1_inner,
+#tab2_inner,
+#tab3_inner,
+#tab4_inner,
+#tab5_inner {
+    display: none;
+    height: 1200px;
+}
+
+@media screen and (max-width: 1049px) {
+#tab1_inner,
+#tab2_inner,
+#tab3_inner,
+#tab4_inner,
+#tab5_inner {
+    display: none;
+    height: 900px;
+    font-size: 0.9em;
+}
+}
+
+/* form */
+.form {
+    display: block;
+    width: 1000px;
+	margin: auto;
+	padding-top: 40px;
+}
+.form tr {
+	position: relative;
+    display: block;
+    width: 1000px;
+    height: 80px;
+    border-top: solid 1px #e5e5e5;
+}
+.form th {
+    display: block;
+    width: 200px;
+    height: 100%;
+	text-align: left;
+	padding-top: 2em;
+	padding-left: 2em;
+	color: #333;
+}
+.form td {
+	position: absolute;
+	top: 0;
+	left: 200px;
+	height: 100%;
+	padding: 30px;
+}
+.form td input,
+.form td textarea {
+	background: #f4f4f4;
+	border: none;
+	padding: 10px 15px;
+	resize: none;
+}
+
+.enter_btn {
+	display: block;
+	margin: auto;
+	margin-top: 120px;
+}
+.tdbottom {
+	height: 200px !important;
+}
+
+@media screen and (max-width: 1049px) {
+.form {
+    width: 100%;
+}
+.form tr {
+	width: 540px;
+}
+.spmini {
+    width: 240px;
+}
+.spbai {
+    height: 130px !important;
+}
+}
+
+/* お問い合わせ・資料請求 */
+#form,
+#material {
+    padding-bottom: 150px;
+}
+
+
+#form img,
+#material img {
+    display: block;
+    width: 100%;
+    max-width: 1159px;
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 1049px) {
+#form,
+#material {
+    width: 100%;
+    margin-top: 0;
+}
+}
+
+
+/* FAQ */
+.faq_top {
+    background: url(contact_top.jpg);
+}
+
+.faq_top .wrapper {
+    background: rgba(0,0,0,0.3);
+}
+
+.faq_top p {
+    letter-spacing: 0.3em !important;
+}
+
+#faq {
+    width: 95%;
+    max-width: 1000px;
+    margin: 100px auto;
+}
+#faq h3 {
+    display: block;
+	font-size: 1.2em;
+    margin-bottom: 1.2em;
+    line-height: 1.8em;
+	border: none;
+}
+#faq h3 b {
+	display: inline-block;
+	width: 70px;
+	font-size: 1.8em;
+    color: #6d0000;
+	font-weight: bold;
+}
+#faq p {
+    display: block;
+    line-height: 1.8em;
+}
+#faq p b {
+	display: inline-block;
+	width: 40px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#faq span {
+    display: block;
+	width: 100%;
+	border-bottom: solid 1px #eaeaea;
+	padding: 30px;
+}
+
+#tab1_inner img {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+#tab2_inner img {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto 100px;
+}
+#tab3_inner img {
+    display: block;
+    width: 100%;
+    max-width: 745px;
+    margin: 0 auto 100px;
+}
+
+.page_tab {
+    width: 802px;
+}
+.page_tab li {
+    width: 160px;
+}
+
+@media screen and (max-width: 1049px) {
+#faq {
+    width: 100%;
+    margin: 0;
+}
+.page_tab {
+    width: 477px;
+    margin: 60px auto 30px;
+}
+.page_tab li {
+    width: 95px;
+}
+#faq h3 b {
+	width: 60px;
+	font-size: 1.4em;
+}
+}
+
+
+/* 運営会社 */
+.operating_top {
+    background: url(contact_top.jpg);
+}
+
+.operating_top .wrapper {
+    background: rgba(0,0,0,0.3);
+}
+
+.operating_top p {
+    letter-spacing: 0.3em !important;
+}
+
+#operating {
+    width: 95%;
+    max-width: 1000px;
+    margin: 100px auto;
+    text-align: center;
+}
+#operating table {
+    margin: 30px auto 0;
+}
+#operating p {
+    line-height: 2.0em;
+    padding: 0 15px 0;
+}
+#operating th,
+#operating td {
+    background: #eee;
+    border: solid 1px white;
+    text-align: left;
+    padding: 15px 50px 15px 15px;
+    line-height: 1.5em;
+}
+
+.enter_btn {
+    margin-top: 60px;
+}
+.ayami {
+    position: relative;
+    top: 0.7em;
+}
+
+@media screen and (max-width: 1049px) {
+#operating {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 100px;
+}
+#operating table {
+    width: 95%;
+    font-size: 0.95em;
+}
+#operating th,
+#operating td {
+    padding: 15px;
+}
+}
+
+
+/* スポンサーについて */
+.sponsor_top {
+    background: url(sponsor.jpg);
+}
+
+.sponsor_top .wrapper {
+    background: rgba(0,0,0,0.0);
+}
+
+.sponsor_top p {
+    width: 450px !important;
+    letter-spacing: 0.1em !important;
+}
+
+#sponsor {
+    width: 100%;
+    margin: 50px 0 0;
+}
+#sponsor h2 {
+    margin: 0 auto 50px;
+}
+.sponsor01 {
+    width: 100%;
+    background: transparent;
+    padding: 100px 0;
+}
+.sponsor02 {
+    width: 100%;
+    background: #eee;
+    padding: 100px 0;
+}
+.sponsor01 span,
+.sponsor02 span {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor01 span p,
+.sponsor02 span p {
+    line-height: 2.2em;
+    padding: 0 25px;
+}
+
+.kyousanbox {
+    width: 95%;
+    max-width: 900px;
+    text-align: left;
+    margin: 100px auto 0;
+}
+
+.kyousan01 {
+    background: #eee;
+    padding: 20px 10px 20px 30px;
+}
+.kyousan02 {
+    background: transparent;
+    padding: 20px 10px 80px 30px;
+}
+.kyousan02 p {
+    padding: 0 !important;
+}
+.kyousan01 b {
+    display: block;
+    font-size: 4.0em;
+    color: #7d0000;
+    float: left;
+}
+.kyousan01 p,
+.kyousan02 p {
+    display: block;
+    padding-left: 75px !important;
+}
+
+@media screen and (max-width: 1049px) {
+.sponsor01 span p,
+.sponsor02 span p {
+    text-align: left;
+}
+}
