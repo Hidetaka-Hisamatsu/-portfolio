@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>おかやまスーパーキッズプロジェクト</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Language" content="ja">
+    <meta property="og:title" content="おかやまスーパーキッズプロジェクト" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="_data/logo_mini.png" />
+    <link rel="shortcut icon" href="_data/favicon.ico" type="image/vnd.microsoft.ico"/>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="top.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+
+    <nav>
+        <span>
+        <h1><a href="">
+            <img src="_images/logo.png" alt="おかやまスーパーキッズプロジェクト">
+        </a></h1>
+        <ul class="menu">
+            <a href=""><li>お問い合わせ</li></a>
+        </ul>
+        </span>
+    </nav>
+</head>
+
+<body>
+<div class="bodyinner">
+    <div id="slider"></div>
+
+
+
+    <div class="top01 bg1">
+        <h2>「小学生が1年で大人顔負けのゲームをつくる」</h2>
+
+        <p>そんな話、信じられますか？<br>
+        もし事実だとしたら、ワクワクしませんか？</p>
+
+        <p>プログラミングとは誰にとっても平等なものです。<br>
+        きちんと学ぶことで、大人から子供まで年齢に関係なくそのスキルを習得することができます。</p>
+        
+        <p>自学道場では、１年間のカリキュラムを通じてプログラミングの基礎から応用までを丁寧に教えていきます。<br>
+        初めはパソコンなんて全く分からないような子も、1年後には「周りをアッと驚かせるようなゲーム」を自らの手で作れるようになります。</p>
+
+        <p>そして、このカリキュラムを終えた後は<br>
+        自ら頭を使って考え、利用者が楽しめるようなゲームを開発できるような人材になるでしょう。</p>
+
+    </div>
+
+
+
+    <div class="top02 bg2">
+        <h2>何が身につくの？</h2>
+        <div class="tbox">
+            <ul class="tmenu tm_point">
+                <li id="point1m" class="litop tm_active" onclick="point(1)">プログラミ<br class="br-sp2">ング能力<span></span></li>
+                <li id="point2m" onclick="point(2)">論理的<br class="br-sp2">思考能力<span></span></li>
+                <li id="point3m" class="single" onclick="point(3)">表現力<span></span></li>
+                <li id="point4m" class="single" onclick="point(4)">創造力<span></span></li>
+            </ul>
+            <div class="tsupbox">
+                <div id="point1s" class="tsup ts_active">
+                    <img src="_images/top001.jpg" alt="">
+                    <p>2020年には小学校でプログラミングの授業が必須化されるなど、プログラミングスキルに対する需要は年々高まってきています。
+                    現代社会では、この貴重なスキルを持つ人材が重宝され、多くの学生や社会人がこのスキルの習得を目指しております。
+                    自学道場では、このプログラミング能力の徹底的な理解を可能とするカリキュラムを提供します。</p>
+                    <div class="clear"></div>
+                </div>
+                <div id="point2s" class="tsup">
+                    <img src="_images/top002.jpg" alt="">
+                    <p>プログラミングを学ぶことの利点として、論理的思考力が身につくことがあげられます。
+                    プログラミングとは、単純にパソコンで作業をしているわけではなく、頭を使いながら「コード」と呼ばれる文字列を組んでいきます。
+                    この「コード」をより美しく組んでいく練習を行う中で、自然と論理的に考える力が身についていきます。</p>
+                    <div class="clear"></div>
+                </div>
+                <div id="point3s" class="tsup">
+                    <img src="_images/top003.jpg" alt="">
+                    <p>プログラミングを使ってゲームやホームページを作ることは、作品を創作することと似ています。
+                    自らの頭の中にあるイメージを一つの形として表現することで、オリジナリティを磨くとともに表現力を身につけることができます。</p>
+                    <div class="clear"></div>
+                </div>
+                <div id="point4s" class="tsup">
+                    <img src="_images/top001.jpg" alt="">
+                    <p>他とは違うオリジナリティを持つモノを生み出すために必要となる創造力は、どんなことを行う上でも大切な力であるといえます。
+                    クリエイティブな要素を含むプログラミングは、この創造力を高めてくれるといえるでしょう。</p>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="top03 bg1">
+        <h2>１年の流れ</h2>
+        <div class="yearsbox">
+            <div class="years">
+                <b>プログラミングを知ろう</b>
+                <p>紙やゲームを使ってプログラミングの基礎を学びます。<br>（1～2ヶ月目）</p>
+            </div>
+            <div class="years_allow"></div>
+            <div class="years">
+                <b>コードを書いてみよう</b>
+                <p>学んだ基礎知識を活かして実際にコードを書いていきます。<br>（2～11ヶ月目）</p>
+            </div>
+            <div class="years_allow"></div>
+            <div class="years">
+                <b>自分のゲームをつくろう</b>
+                <p>オリジナルゲームを企画し自分で作りたいゲームを作ります。<br>（12ヶ月目～）</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+
+    <div class="top04 bg2">
+        <h2>開発ツール</h2>
+        <div class="tbox">
+            <ul class="tmenu tm_tools">
+                <li id="tools1m" class="litop tm_active" onclick="tools(1)">Hour of Code<br class="br-sp2">とは<span></span></li>
+                <li id="tools2m" class="single" onclick="tools(2)">Scratchとは<span></span></li>
+                <li id="tools3m" class="single" onclick="tools(3)">Unityとは<span></span></li>
+            </ul>
+            <div class="tsupbox">
+                <div id="tools1s" class="tsup ts_active">
+                    <img src="_images/top001.jpg" alt="">
+                    <p>「Hour of Code」とは、プログラミングを推進するアメリカの非営利団体Code.orgが運営するプログラミング学習サイトです。
+                    対象年齢が4歳から108歳という初心者にとって非常に優しいつくりになっており、世界中で1億人以上の人が参加しています。
+                    特定のキャラクターを「どのように動かすか」ということをゲーム仕様で楽しく学べます。
+                    これが実はプログラミングの基礎部分となっており、生徒は「楽しく遊んでいるうちにプログラミングの基礎スキルを習得する」ことができます</p>
+                    <div class="clear"></div>
+                </div>
+                <div id="tools2s" class="tsup">
+                    <img src="_images/top002.jpg" alt="">
+                    <p>「Scratch」とは、MITメディアラボが子供向けに開発したプログラミング言語の一つです。「ビジュアルプログラミング言語」と呼ばれ、視覚的にプログラミングを学ぶことで人気を有しております。
+                    視覚を用いてキャラクターを動かす体験を通じ、直感的にプログラミングを学んでいくことができます。
+                    通常プログラミングを学ぶ上で最初に躓きやすいポイントを無意識のうちに習得できるので、スムーズに次のステップへ進んでいくことができます。</p>
+                    <div class="clear"></div>
+                </div>
+                <div id="tools3s" class="tsup">
+                    <img src="_images/top003.jpg" alt="">
+                    <p>「Unity」とは、ユニティ・テクノロジーズ社が提供するゲーム開発プラットフォームです。
+                    簡単に言うと、デザインやサウンドなどゲームを作る上で必要となる要素を組み合わせて実際にゲームを開発するための開発環境です。
+                    MacやWindowsからiOS、Androidまで幅広い端末に対応可能なため、Unityを使ってゲームを開発することで多くのユーザーにゲームを届けられます。
+                    深い専門知識を持たなくてもゲームを開発することができ、生徒一人一人がオリジナルのゲームを作ることができます。</p>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="top05 bg1">
+        <h2>募集要項</h2>
+        <div class="list_box">
+        <div class="list">
+            <div class="list_l"><span>開催期間</span></div>
+            <div class="list_r">
+            <span>
+                <p>2017年9月2日〜2018年8月25日（毎週土曜日・14:00〜16:00）</p>
+            </span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_l"><span>募集期間</span></div>
+            <div class="list_r">
+            <span>
+                <p>2017年6月1日〜2017年8月10日</p>
+                <br>
+                <p>※応募者多数の場合は抽選となります。</p>
+            </span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_l"><span class="youkou_single">対象</span></div>
+            <div class="list_r">
+            <span>
+                <p>小学校3年生〜小学校6年生</p>
+                <br>
+                <p>※小学校1年生、小学校2年生、中学校1年生〜中学校3年生はお問い合わせください</p>
+            </span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_l"><span>持ち物</span></div>
+            <div class="list_r">
+            <span>
+                <p>パソコン</p>
+            </span>
+            </div>
+        </div>
+        </div>
+        <div class="enter_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-5LDCkUkrd8dEMBFC6rLE6x35ij7s1KQk0yLnv1aDOuK3Iw/viewform" target="_blank">入塾申込はこちら</a></div>
+    </div>
+
+
+
+    <div class="top06 bg2">
+        <h2>料金システム</h2>
+        <div class="list_box">
+        <div class="list">
+            <div class="list_l"><span>授業料</span></div>
+            <div class="list_r">
+            <span>
+                19,000(+税)
+            </span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_l"><span class="shiharai3">お支払い方法</span></div>
+            <div class="list_r">
+            <span>
+                
+            </span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_l"><span>お支払日</span></div>
+            <div class="list_r">
+            <span>
+                
+            </span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_l"><span class="shiharai3">お申し込みの流れ</span></div>
+            <div class="list_r">
+            <span>
+                
+            </span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_l"><span class="shiharai3">お申し込み期限</span></div>
+            <div class="list_r">
+            <span>
+                
+            </span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_l"><span>その他</span></div>
+            <div class="list_r">
+            <span>
+                
+            </span>
+            </div>
+        </div>
+        </div>
+        <div class="enter_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-5LDCkUkrd8dEMBFC6rLE6x35ij7s1KQk0yLnv1aDOuK3Iw/viewform" target="_blank">入塾申込はこちら</a></div>
+    </div>
+
+
+
+    <div class="top07 bg1">
+        <h2>アクセス</h2>
+        <div id="access">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.15387557299474!2d133.91274330847753!3d34.64303336304855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3f23aed26e1f079!2zQk9PS09GRiDlsqHlsbHmnbHlj6Tmnb7lupc!5e0!3m2!1sja!2sjp!4v1497017436519" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="accesssup">
+            <div class="as_l">
+                <b>教室所在地</b><br>
+                <br>
+                〒700-0921<br>
+                岡山県岡山市北区東古松485-4<br>
+                <br>
+                ブックオフ２階<br>
+                ぱらママ事務局内
+            </div>
+            <div class="as_r">
+            <span>
+                <p>JR宇野線 大元駅　徒歩6分</p>
+                <br>
+                <p>JR岡山駅から9分<br>（JR宇野線にて1駅、大元駅より徒歩）</p>
+            </span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+
+    <div class="top08 bg2">
+        <h2>入塾までの流れ</h2>
+        <div class="nagarebox">
+        <div class="nagare">
+            <span>
+                <b>１.入塾申し込み</b>
+                <p>HP上の「お申し込みフォーム」から、必要事項をご入力いただいて入塾の申し込みを行ってください。</p>
+            </span>
+        </div>
+        <div class="nagare">
+            <span>
+                <b>２.合否通知</b>
+                <p>申し込み希望者が多数の場合、フォームの内容から選考を行わせていただきます。
+                選考が終了致しましたら、メールにて合否を通知させていただきます。</p>
+            </span>
+        </div>
+        <div class="nagare">
+            <span>
+                <b>３.お支払い</b>
+                <p>指定の口座に、所定の金額をお支払いください。</p>
+            </span>
+        </div>
+        <div class="nagare">
+            <span>
+                <b>４.手続き完了</b>
+                <p>全ての手続きが完了致しましたら、完了の旨をお知らせするメールをお送りします。</p>
+            </span>
+        </div>
+        <div class="nagare">
+            <span>
+                <b>５.授業スタート</b>
+                <p>上記全ての完了後、正式に授業開始となります。</p>
+            </span>
+        </div>
+        <div class="clear"></div>
+        </div>
+    </div>
+
+
+
+    <div class="top09 bg1">
+        <h2>入塾のお申し込み</h2>
+        <div class="enter_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-5LDCkUkrd8dEMBFC6rLE6x35ij7s1KQk0yLnv1aDOuK3Iw/viewform" target="_blank">入塾申込はこちら</a></div>
+    </div>
+
+
+
+    <div class="top10 bg2">
+        <h2>お問い合わせ</h2>
+        <div class="enter_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdvZgBuEcpLxAELGE11MAEosoViyWHsAGB6lFKYjPuD1KLIug/viewform" target="_blank">お問い合わせはこちら</a></div>
+    </div>
+
+
+
+    <div class="top11 bg1">
+        <h2>よくある質問</h2>
+        <div class="faqbox faqtop">
+            <div class="faq_q" onclick="topfaq(1)">
+                <b>Q</b><p>パソコンは全くの初心者なのですが、受講可能でしょうか？</p>
+            </div>
+            <div id="faq1" class="faq_a">
+                <span><b>A</b><p>はい、可能です。生徒1人ひとりのレベルに合わせて、スタッフがサポートしていきますので誰でも参加することができます。</p></span>
+            </div>
+        </div>
+        <div class="faqbox">
+            <div class="faq_q" onclick="topfaq(2)">
+                <b>Q</b><p>授業の振替などについて教えてください。</p>
+            </div>
+            <div id="faq2" class="faq_a">
+                <span><b>A</b><p>ここに文章を入れてください</p></span>
+            </div>
+        </div>
+        <div class="faqbox">
+            <div class="faq_q" onclick="topfaq(3)">
+                <b>Q</b><p>持ち込むパソコンに特別な準備は必要ですか？</p>
+            </div>
+            <div id="faq3" class="faq_a">
+                <span><b>A</b><p>ここに文章を入れてください</p></span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+</body>
+
+<footer>
+<div id="copy">
+    Copyright &copy; 2017 <a href="http://ribans.co.jp/" target="_blank">Ribans Corp.</a> All Rights Reserved.
+</div>
+</footer>
+
+</html>
