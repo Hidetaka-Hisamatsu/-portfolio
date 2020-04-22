@@ -1,0 +1,574 @@
+@charset "UTF-8";
+
+
+
+/* フォント */
+@font-face {
+	font-family: 'KozGoPro';
+  	src: url('https://yume-ko.jp/temtg/fonts/KozGoPro-Regular.otf');
+}
+@font-face {
+	font-family: 'KozGoPro-Bold';
+  	src: url('https://yume-ko.jp/temtg/fonts/KozGoPro-Bold.otf');
+}
+@font-face {
+	font-family: 'GenShinGothic';
+  	src: url('https://yume-ko.jp/temtg/fonts/GenShinGothic-Medium.ttf');
+}
+
+div.ninja_onebutton_output_overlay.show {
+	display: block !important;
+}
+.onebtn_overlay_sp {
+	display: inline-block !important;
+	width: 33.33% !important;
+}
+.ninja_onebutton_output_responsive {
+	display: none !important;
+}
+
+/*** 全ページ共通 ***/
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	font-family: 'KozGoPro', sans-serif;
+	-webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+	transition: .3s;
+	-webkit-text-size-adjust: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'GenShinGothic', sans-serif;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+html {
+	position: relative;
+	height: 100%;
+	padding: 0;
+}
+body {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	min-width: 420px;
+	padding: 0;
+}
+p {
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+	line-height: 1.8;
+}
+.p-mini {
+	display: inline-block;
+	font-size: 0.9em;
+	margin-top: 15px;
+}
+.p-mini2 {
+	display: inline-block;
+	font-size: 0.8em !important;
+	margin-top: 15px;
+}
+.p-spcenter {
+	text-align: center !important;
+}
+b {
+	font-family: KozGoPro-Bold;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.contents {
+	padding: 80px 20px;
+	text-align: center;
+}
+.bg2 {
+	color: white;
+	background: #333;
+}
+.content-inner {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+.clear {
+	clear: both;
+}
+
+@media screen and (max-width: 999px) {
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	font-family: sans-serif;
+}
+.contents {
+	font-size: 0.7em;
+}
+p {
+	display: inline-block;
+	text-align: left;
+}
+}
+
+@media screen and (min-width: 550px) {
+.br-sp {
+	display: none;
+}
+}
+
+
+/* 見出しタグ */
+h3 {
+	font-size: 2.4em;
+	letter-spacing: 0.1em;
+	margin-bottom: 50px;
+}
+h3 span {
+	display: block;
+	font-size: 0.65em;
+	margin-top: 0.5em;
+}
+
+h4 {
+	font-size: 1.4em;
+	letter-spacing: 0.1em;
+	margin: 50px auto;
+}
+
+.ivents-h3 {
+margin-bottom: 10px;
+}
+.ivents-h4 {
+margin-top: 0;
+}
+
+
+
+
+/* ボタン */
+.morebtn {
+	display: block;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding-top: 10px;
+}
+.morebtn a {
+	display: inline-block;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #333 !important;
+	border: solid 3px #333;
+	padding: 20px 50px;
+	text-decoration: none;
+}
+.morebtn a:hover {
+	background: #333;
+	color: white !important;
+}
+
+.bg2 .morebtn a {
+	color: white !important;
+	border: solid 3px white;
+}
+.bg2 .morebtn a:hover {
+	background: white;
+	color: #333 !important;
+}
+
+
+
+/* ヘッダーナビゲーション */
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display: block;
+	width: 100%;
+	min-width: 420px;
+	height: 70px;
+	background: #333;
+	box-shadow: 0 0 0 1px #777;
+}
+.site-branding {/* サイト名 */
+	display: inline-block;
+	width: auto;
+}
+.site-title {
+	width: auto;
+	height: 70px;
+	margin: 0;
+	padding: 10px 20px;
+}
+.site-title img {
+	width: auto;
+	height: 100%;
+}
+.site-title:hover {
+	background: #444;
+}
+#site-navigation {/* メニュー */
+	display: inline-block;
+	width: auto;
+	height: 70px;
+	padding: 15px 0;
+	float: right;
+}
+#primary-menu {
+	display: block;
+	line-height: 40px;
+	padding-right: 20px;
+}
+#primary-menu li {
+	padding: 0 20px;
+	border-left: solid 1px white;
+}
+#primary-menu li:first-child {
+	border-left: none;
+}
+#primary-menu li a {
+	color: white !important;
+	letter-spacing: 0.1em;
+}
+#primary-menu li:hover {
+	background: #555;
+}
+#nav-open-btn,
+.nav-entry-btn {/* スマホ向け\ボタン */
+	display: none;
+}
+
+#primary-menu .sub-menu {
+	background: rgba(50,50,50,0.7);
+}
+#primary-menu .sub-menu li {
+	border: none;
+	border-left: solid 3px transparent;
+}
+#primary-menu .sub-menu li:hover {
+	border-left: solid 3px white;
+}
+
+
+@media screen and (max-width: 999px) {
+.site-header {
+	height: 50px;
+	text-align: center;
+}
+#site-navigation {
+	position: fixed;
+	top: 50px;
+	display: block;
+	width: 100%;
+	padding: 0;
+}
+.site-title {
+	height: 50px;
+	margin: 0 auto;
+	padding: 12px 20px;
+}
+#primary-menu {
+	height: 0;
+	background: rgba(0,0,0,0.8);
+	padding: 0;
+	overflow: hidden;
+}
+#primary-menu.active {
+	height: 244px;
+}
+#primary-menu li {
+	display: block;
+	width: 100%;
+	border: none;
+	float: none;
+	border-bottom: solid 1px rgba(255,255,255,0.5);
+	padding: 0;
+	line-height: 60px;
+}
+#nav-open-btn {/* スマホ向け開閉ボタン */
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	display: block;
+	cursor: pointer;
+}
+
+
+
+
+
+.menu-trigger,
+.menu-trigger span {/* ハンバーガーアイコン */
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+.menu-trigger {
+  position: relative;
+  width: 30px;
+  height: 26px;
+}
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 12px;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+.menu-trigger span:nth-of-type(1) {
+  -webkit-animation: menu-bar01 .75s forwards;
+  animation: menu-bar01 .75s forwards;
+}
+@-webkit-keyframes menu-bar01 {
+  0% {
+    -webkit-transform: translateY(12px) rotate(45deg);
+  }
+  50% {
+    -webkit-transform: translateY(12px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+  }
+}
+@keyframes menu-bar01 {
+  0% {
+    transform: translateY(12px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+.menu-trigger span:nth-of-type(2) {
+  transition: all .25s .25s;
+  opacity: 1;
+}
+.menu-trigger span:nth-of-type(3) {
+  -webkit-animation: menu-bar02 .75s forwards;
+  animation: menu-bar02 .75s forwards;
+}
+@-webkit-keyframes menu-bar02 {
+  0% {
+    -webkit-transform: translateY(-12px) rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: translateY(-12px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+  }
+}
+@keyframes menu-bar02 {
+  0% {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+.menu-trigger.active span:nth-of-type(1) {
+  -webkit-animation: active-menu-bar01 .75s forwards;
+  animation: active-menu-bar01 .75s forwards;
+}
+@-webkit-keyframes active-menu-bar01 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+  }
+  50% {
+    -webkit-transform: translateY(12px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(12px) rotate(45deg);
+  }
+}
+@keyframes active-menu-bar01 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(12px) rotate(0);
+  }
+  100% {
+    transform: translateY(12px) rotate(45deg);
+  }
+}
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-trigger.active span:nth-of-type(3) {
+  -webkit-animation: active-menu-bar03 .75s forwards;
+  animation: active-menu-bar03 .75s forwards;
+}
+@-webkit-keyframes active-menu-bar03 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+  }
+  50% {
+    -webkit-transform: translateY(-12px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(-12px) rotate(-45deg);
+  }
+}
+@keyframes active-menu-bar03 {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0);
+  }
+  100% {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+}
+
+
+
+
+
+.nav-entry-btn {/* スマホ向けエントリーボタン */
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 120px;
+	color: white !important;
+	background: #b02;
+	line-height: 50px;
+	text-decoration: none;
+	letter-spacing: 0.15em;
+}
+.nav-entry-btn:hover {
+	background: #c13;
+}
+}
+
+
+/* フッター */
+footer {
+	background: #333;
+	padding: 60px 0;
+}
+.entry-footer,
+.site-info {
+	display: none;
+}
+.footer-logo {
+	width: 220px;
+	margin: auto;
+}
+.footer-sns-box {
+	width: 170px;
+	height: 96.5px;
+	margin: auto;
+	padding-top: 20px;
+}
+.footer-sns-twi,
+.footer-sns-fb {
+	display: block;
+	width: 45%;
+	height: 76.5px;
+	float: left;
+	border: solid 3px white;
+	padding: 15px;
+}
+.footer-sns-fb {
+	float: right;
+}
+.footer-sns-twi:hover,
+.footer-sns-fb:hover {
+	background: rgba(255,255,255,0.3);
+}
+
+
+@media screen and (max-width: 999px) {
+.footer-logo {
+	width: 140px;
+}
+.footer-sns-box {
+	width: 150px;
+	height: 87.5px;
+	padding-top: 20px;
+}
+.footer-sns-twi,
+.footer-sns-fb {
+	height: 67.5px;
+}
+}
+
+
+
+/* PARTNERS */
+.partners {
+	max-width: 1000px;
+	margin: auto;
+}
+.partners div {
+	width: 33.3%;
+	min-width: 333px;
+	float: left;
+	padding: 25px;
+}
+.partners div span {
+	display: block;
+	background: white;
+}
+.partners div p {
+	margin-top: 20px;
+}
+.partners_mini div {
+	width: 25%;
+	min-width: 0;
+	padding: 10px;
+}
+.partners_mini div p {
+	font-size: 1.1em;
+	text-align: center !important;
+}
+.ope {
+	margin-bottom: 50px !important;
+}
+
+@media (max-width: 1049px) {
+.partners {
+	max-width: 666px;
+}
+.partners div {
+	width: 50%;
+	min-width: 0;
+}
+.partners div span {
+	width: 100%;
+	height: auto;
+}
+.partners_mini div {
+	width: 33.3%;
+}
+}
+
+
+@media (max-width: 549px) {
+.partners div {
+	padding: 10px;
+}
+.partners_mini div {
+	padding: 5px;
+}
+}
