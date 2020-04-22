@@ -1,0 +1,274 @@
+/* topページスライダー */
+#slider {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    background: url(images/slider01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#slider img {
+    display: block;
+    margin: 19% auto 2%;
+}
+#slider p {
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+/* 説明文 */
+#slogan {
+    width: 100%;
+    background: #eee;
+    color: #333;
+    font-size: 1.4em;
+    padding: 90px 10px;
+    line-height: 1.8em;
+    text-align: center;
+}
+#slogan span {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    color: #338;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+#slogan p {
+    display: block;
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+/* 3つの事業内容 */
+#topPR {
+    text-align: center;
+    padding: 60px 0;
+}
+
+#topPR h2 {
+    width: 100%;
+    margin: 60px 0;
+    background: transparent;
+    color: #333;
+}
+#topPR h2 span {
+    display: inline-block;
+    font-size: 1.8em;
+    border-bottom: solid 3px #338;
+    padding: 10px 20px;
+}
+
+.topPR_l img,
+.topPR_r img {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+.topPR_l {
+    position: relative;
+    width: 33.33%;
+    height: 500px;
+    padding: 10px;
+    float: left;
+}
+.topPR_r {
+    position: relative;
+    width: 66.67%;
+    height: 500px;
+    overflow: auto;
+}
+.topPR_r_l,
+.topPR_r_r {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+.topPR_r_l {
+    float: left;
+}
+
+.topPRbox {
+    width: 100%;
+    max-width: 1900px;
+    margin: auto;
+    padding: 0 10px 50px;
+}
+
+
+
+.topPRbox a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.topPRbox a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+}
+.topPRbox a span p {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6em;
+    color: #eee;
+    line-height: 1.6em;
+    border: solid 3px #eee;
+    padding-top: 180px;
+    transition: 1s;
+}
+.topPRbox a img {
+    transition: 1s;
+}
+.topPRbox a:hover > img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.topPRbox a:hover > span p {
+    color: #cde;
+    line-height: 1.6em;
+    border: solid 3px #cde;
+    transition: 1s;
+}
+
+
+
+/* タイル */
+#toptilebox {
+    width: 100%;
+    max-width: 1920px;
+    padding: 10px;
+}
+.toptile { 
+    padding: 10px;
+}
+.tile {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-size: cover !important;
+}
+.tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: .3s;
+}
+.tile:hover:before {
+    background: rgba(0,0,0,0.3);
+    transition: .3s;
+}
+.tile:hover > span {
+    background: rgba(255,255,255,0.92);
+    transition: .3s;
+}
+
+.toptile01 { width: 65%; }
+.toptile02 { width: 35%; }
+.toptile03 { width: 100%; }
+.toptile04 { width: 45%; }
+.toptile05 { width: 55%; }
+.toptile06 { width: 60%; }
+.toptile07 { width: 40%; }
+
+.toptile01,
+.toptile04,
+.toptile06 { 
+    float: left;
+}
+
+.toptile02,
+.toptile05,
+.toptile07 { 
+    overflow: hidden;
+}
+
+
+.toptile01 a.tile {
+    background: url(images/top001.jpg);
+}
+.toptile02 a.tile {
+    background: url(images/top002.jpg);
+}
+.toptile03 a.tile {
+    background: url(images/top003.jpg);
+}
+.toptile04 a.tile {
+    background: url(images/top004.jpg);
+}
+.toptile05 a.tile {
+    background: url(images/top005.jpg);
+}
+.toptile06 a.tile {
+    background: url(images/top006.jpg);
+}
+.toptile07 a.tile {
+    background: url(images/top007.jpg);
+}
+
+
+.tile span {
+    position: absolute;
+    display: block;
+    width: 340px;
+    background: rgba(255,255,255,0.8);
+    color: #333;
+    height: 80%;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.1);
+    transition: .3s;
+    padding: 60px 40px;
+    line-height: 1.8em;
+}
+.tile span h3{
+    display: block;
+    font-size: 2.0em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.tile span p{
+    display: block;
+    margin-top: 40px;
+}
+
+.toptile01 a.tile span,
+.toptile02 a.tile span,
+.toptile06 a.tile span,
+.toptile07 a.tile span {
+    top: 10%;
+    left: 50px;
+}
+.toptile04 a.tile span,
+.toptile05 a.tile span {
+    top: 10%;
+    right: 50px;
+}
+.toptile03 a.tile span {
+    top: 10%;
+    right: 20%;
+}
